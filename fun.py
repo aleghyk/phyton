@@ -13,7 +13,7 @@ def starter (p):
     if p == '':
         print ("incorect function call /n")
         return 1
-        print (str(p) + "test")
+    print (str(p) + "test")
     return input("some text")
 def stopper ():
     print ("stop this")
