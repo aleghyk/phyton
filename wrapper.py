@@ -1,7 +1,7 @@
 import math
 import random
 import fun
-
+import add
 random_1 = random.randint (1,100)
 print(math.sqrt(random_1))
 fun.stopper()
