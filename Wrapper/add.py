@@ -6,7 +6,7 @@ import fun
 
 def lock_file():
     f = open('lock', 'w')
-    f.write('')
+#    f.write('')
     f.close()
 
 
