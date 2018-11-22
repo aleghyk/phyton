@@ -9,6 +9,12 @@ def Config_Open(cfg_f_n):
         print ('\nFilename is not correct\n')
         assert()
     ConfigFile = open(cfg_f_n,'r')
-    print (ConfigFile.read)
+    cfg= ConfigFile.read()
+    print (cfg)
+    while 1==1:
+        param = input ("\nplease enter paremetrs for check\n")
+        if param in cfg: print('found')
+        else: print ('not found')
+
     ConfigFile.close
 
