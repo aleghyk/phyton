@@ -17,7 +17,7 @@ def starter (p):
     return input("some text")
 def stopper ():
     print ("stop this")
-    return
+
 def dict_open(file, person):
     if not file or not person:
         print("somethig went wrong")
