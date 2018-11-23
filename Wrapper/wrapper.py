@@ -23,11 +23,11 @@ elif choose == 'w':
     while i <= int(x):
         i+=5
         print (i)
-elif choose == 'c':
-    file_open.Config_Open(input('\nPlease enter conf file name\n'))
+elif choose == 'c': file_open.Config_Open("Wrapper.cfg")
+#    file_open.Config_Open(input('\nPlease enter conf file name\n'))
 
 else:
     print ('\nWrong choose\n')
-    quit()
+
 
 
