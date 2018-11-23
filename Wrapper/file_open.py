@@ -14,7 +14,9 @@ def Config_Open(cfg_f_n):
     while 1==1:
         param = input ("\nplease enter paremetrs for check\n")
         if param in cfg: print('found')
+        elif param not in cfg: cfg = cfg + '\nVar = ' + param
         else: print ('not found')
+        print ('\n'+cfg)
 
     ConfigFile.close
 
