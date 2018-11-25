@@ -11,6 +11,10 @@ def Config_Open(cfg_f_n):
     ConfigFile = open(cfg_f_n,'r')
     cfg= ConfigFile.read()
     print (cfg)
+    temp = list(cfg)
+    print ("\nas a list\n")
+    print (temp)
+    input("continue?")
     while 1==1:
         param = input ("\nplease enter paremetrs for check\n")
         if param in cfg: print('found')

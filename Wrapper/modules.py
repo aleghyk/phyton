@@ -14,5 +14,6 @@ def list_modif ():
     list1.append(list2 [2])
     list2.insert( int(list1[2]), str(list2[3]))
     print (str (list1) + '    &    ' + str (list2) )
+    print (list2.count(9))
 
 list_modif()
