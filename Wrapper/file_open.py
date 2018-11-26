@@ -1,14 +1,18 @@
-def Config_Open(cfg_f_n):
+def Config_Open(cfg_f_n, lock_f):
     if cfg_f_n == '':
         print ('\nFile name cannot be empty\n')
         assert()
     elif cfg_f_n == 'Wrapper.cfg':
         print ("\nFile is correct\n")
-
+        lock_f() #fuction call through description which was transfered as var
     else:
         print ('\nFilename is not correct\n')
-        assert()
-    ConfigFile = open(cfg_f_n,'r')
+        #assert()
+    try:
+        ConfigFile = open(cfg_f_n,'r')
+    except:
+        print ('incorrect file name'+ cfg_f_n)
+        return
     cfg= ConfigFile.read()
     print (cfg)
     temp = list(cfg)
