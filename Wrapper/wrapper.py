@@ -2,7 +2,7 @@ import math
 import random
 import fun
 import file_open
-import add
+from add import lock_file #import lock function 
 
 choose = input ("\nPlease make your choose! (r-random, s-stopper, d-dict, c-conf, w-while cycle)\n")
 
@@ -25,7 +25,7 @@ elif choose == 'w':
         i+=5
         print (i)
 elif choose == 'c': #file_open.Config_Open("Wrapper.cfg")
-    file_open.Config_Open(input('\nPlease enter conf file name\n'), add.lock_file) # function is passing through variable
+    file_open.Config_Open(input('\nPlease enter conf file name\n'), lock_file) # function is passing through variable
 
 else:
     print ('\nWrong choose\n')

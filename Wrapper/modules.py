@@ -1,3 +1,7 @@
+import getpass
+
+
+
 def list_test():
     theList = ["a","b","c"]
     print (theList)
@@ -17,3 +21,5 @@ def list_modif ():
     print (list2.count(9))
 
 list_modif()
+ass = getpass.user()
+print (ass)
