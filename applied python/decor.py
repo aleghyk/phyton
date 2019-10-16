@@ -19,3 +19,8 @@ print (get_area(5))
 def get_area(x):
     return x*x
 get_area (5)
+
+@scale
+def get_double(x):
+    return 2*x
+get_double (5)
