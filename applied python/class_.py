@@ -31,3 +31,13 @@ class C(D):
     pass
 c = C()
 c.f()
+class P(D):
+    def f(self):
+        print ("Poly")
+p = P()
+p.f()
+P.f(p)
+P.f(P)
+
+
+
